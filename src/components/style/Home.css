@@ -1,0 +1,71 @@
+.home {
+  text-align: center;
+  padding: 40px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product {
+  flex-basis: calc(33.33% - 40px);
+  margin-bottom: 40px;
+}
+
+.animated-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.animated-image:hover {
+  transform: translateY(-10px);
+}
+
+.row-divider {
+  flex-basis: 100%;
+  height: 0;
+  margin-bottom: 40px;
+  border-top: 1px solid #ccc;
+}
+
+.price {
+  background-color: #f0f0f0; /* Grey background */
+  padding: 10px;
+}
+
+.price-inner {
+  color: blue; /* Blue text color */
+}
+
+.buy-now {
+  background-color: blue; /* Blue button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buy-now:hover {
+  transform: translateY(-5px); /* Move button 5px up on hover */
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .product {
+    flex-basis: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    flex-basis: calc(100% - 40px);
+  }
+}

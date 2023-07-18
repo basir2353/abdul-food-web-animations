@@ -1,0 +1,46 @@
+.about {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 30px;
+  }
+  
+  .about h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .about p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 20px;
+  }
+  
+  .about h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 12px;
+  }
+};
