@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home">
       <h1>Welcome to the Food Store</h1>
       <div className="image-container">
-        {products.map((product, index) => (
+        {products.map((product) => (
           <div className="product" key={product.id}>
             <img
               src={product.image}
@@ -30,7 +30,6 @@ const Home = () => {
               </div>
               <button className="buy-now">Buy Now</button>
             </div>
-            {(index + 1) % 3 === 0 && <div className="row-divider" />}
           </div>
         ))}
       </div>
